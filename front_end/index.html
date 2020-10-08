@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Teste </title>
+        <meta charset="utf-8">
+        <meta name="viexport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;/*fonte da letra*/
+                margin: 0; /*quanto de  margem */
+                background: #f1f1f1;
+            }
+
+            header {
+                text-align:center;/*alinhamento do texto*/
+                background:#c90f7b ;/**altera cor de fundo */
+                padding: 30px; /*espaço entre o elemento  px= menor unidade medida possivel*/ 
+            }
+
+            header h1 {
+                font-size: 50px;/*tamanho da fonte */
+                color: white;/*cor da fonte*/
+            }
+
+            nav ul {
+                list-style-type: none;/*tirar o marcador da lista */
+                background-color: rgb(39, 2, 126);
+                overflow: hidden;/*permite os elementos filhos que estao em outra camada*/
+                margin:0;
+                padding: 0;
+            }
+
+            nav a{
+                color: white;/*cor do texto*/
+                text-decoration: none;/*retira o sublinhado*/
+                padding: 10px;
+                display: block;/*considera altura e largura do elemento para o padding*/
+            }
+
+            nav li {
+                float: left;
+            }
+
+            nav a:hover { /* alterar quendo o mouse estiver sobre*/
+                background-color: white;
+                color: rgb(39, 2, 126); ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header> 
+           <h1> Edi Cursos Gustavo </h1><!--Cabeçalh0-->
+        </header>
+        <nav><!--Barra de navegação-->
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Sobre</a></li>
+               <li><a href="#">Contato</a></li><!-- tag '<a>' permite a navegação de uma pagina e outra-->
+           </ul>
+        </nav>
+        <section><!--seções da pagina-->>
+            Secessao de informações do site 
+            <article><!--artigo-->
+                Artigo 01
+            </article>
+            <article>
+                Artigo 02
+            </article>
+        </section>
+        <aside>
+            Barra lateral
+        </aside>
+        <footer>
+            Rodapé
+        </footer>
+    </body>
+</html>
