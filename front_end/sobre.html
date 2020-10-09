@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Teste </title>
+        <meta charset="utf-8">
+        <meta name="viexport" content="width=device-width, initial-scale=1"><!--alto ajustamento ('  classresponsivo')-->
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <!--icones diversos -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/icone/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icone/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icone/favicon-16x16.png">
+        <link rel="manifest" href="/icone/site.webmanifest">
+        <link rel="mask-icon" href="/icone/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+       
+    </head>
+    <body>
+        <header> 
+           <h1> Sobre </h1><!--Cabeçalh0-->
+        </header>
+        <nav><!--Barra de navegação-->
+           <ul><!--lista não ordenada-->
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#">Sobre</a></li>
+               <li><a href="contato.html">Contato</a></li><!-- tag '<a>' permite a navegação de uma pagina e outra-->
+               <li><a href="https://www.youtube.com/c/EdiCursos/videos" target="_self">Canal youtube</a></li>   <!--target _blank abre a pagina em uma nova guia _self na mesma --> 
+           </ul>
+        </nav>
+        
+       <div class="row"> <!-- Varios outros elementos dentro dela -->
+            <section><!--seções da pagina conteudo principal -->
+                <article class="card"><!--artigo-->
+                   <h2>Quem somos nós </h2>
+                   <video width="100%" poster="./img/poster.jpg" controls>
+                       <source src="./videos/video.mp4" type="video/mp4">
+                        <source src="./videos/video.ogv" type="video/ogg">
+                        <source src="./videos/video.webm" type="video/webm">
+                        Video não suportado pelo computador 
+                   </video>
+                  <!--<iframe width="500" height="315" src="https://www.youtube.com/embed/TykfCNrjazE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--> 
+
+                </article>
+            </section>
+            <aside> <!--Barra Lateral -->
+                <article class="card">
+                    <h3>Post mais visto</h3>
+                    <img src="img/aula.jpg" 
+                        alt="Capa do post mais visto.">
+                    <img src="" alt="">    
+                    <p>Nessa aula aprederemos como criar a estrutura principal do documento HTML.</p>
+                </article >
+                <article class="card">
+                    <h3>Notícias</h3>
+                    <img src="img/noticia.jpg" alt="Capa da noticia.">
+                    <p>Alunos da escolo Municipal do bairro Alvorada fazem trabalhos sobre proteção ao meio ambiente.</p>
+
+                </article>
+            </aside>
+       </div>
+        <footer>
+                <dl>
+                    <dt>E-mail</dt>
+                    <dd>email@gmail.com</dd>
+                    <br>
+                    <dt>Telefone</dt>
+                    <dd>{46}99147-0933</dd>
+                </dl>
+                <p>Edi Curso</p>
+        </footer>
+    </body>
+</html>

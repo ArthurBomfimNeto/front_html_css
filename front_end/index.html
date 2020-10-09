@@ -3,76 +3,82 @@
     <head>
         <title> Teste </title>
         <meta charset="utf-8">
-        <meta name="viexport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;/*fonte da letra*/
-                margin: 0; /*quanto de  margem */
-                background: #f1f1f1;
-            }
-
-            header {
-                text-align:center;/*alinhamento do texto*/
-                background:#c90f7b ;/**altera cor de fundo */
-                padding: 30px; /*espaço entre o elemento  px= menor unidade medida possivel*/ 
-            }
-
-            header h1 {
-                font-size: 50px;/*tamanho da fonte */
-                color: white;/*cor da fonte*/
-            }
-
-            nav ul {
-                list-style-type: none;/*tirar o marcador da lista */
-                background-color: rgb(39, 2, 126);
-                overflow: hidden;/*permite os elementos filhos que estao em outra camada*/
-                margin:0;
-                padding: 0;
-            }
-
-            nav a{
-                color: white;/*cor do texto*/
-                text-decoration: none;/*retira o sublinhado*/
-                padding: 10px;
-                display: block;/*considera altura e largura do elemento para o padding*/
-            }
-
-            nav li {
-                float: left;
-            }
-
-            nav a:hover { /* alterar quendo o mouse estiver sobre*/
-                background-color: white;
-                color: rgb(39, 2, 126); ;
-            }
-
-        </style>
+        <meta name="viexport" content="width=device-width, initial-scale=1"><!--alto ajustamento ('  classresponsivo')-->
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <!--icones diversos -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/icone/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icone/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icone/favicon-16x16.png">
+        <link rel="manifest" href="/icone/site.webmanifest">
+        <link rel="mask-icon" href="/icone/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+       
     </head>
     <body>
         <header> 
-           <h1> Edi Cursos Gustavo </h1><!--Cabeçalh0-->
+           <h1> Site </h1><!--Cabeçalh0-->
         </header>
         <nav><!--Barra de navegação-->
-           <ul>
+           <ul><!--lista não ordenada-->
                <li><a href="#">Home</a></li>
-               <li><a href="#">Sobre</a></li>
-               <li><a href="#">Contato</a></li><!-- tag '<a>' permite a navegação de uma pagina e outra-->
+               <li><a href="sobre.html">Sobre</a></li>
+               <li><a href="contato.html">Contato</a></li><!-- tag '<a>' permite a navegação de uma pagina e outra-->
+               <li><a href="" target="_self">Canal youtube</a></li>   <!--target _blank abre a pagina em uma nova guia _self na mesma --> 
            </ul>
         </nav>
-        <section><!--seções da pagina-->>
-            Secessao de informações do site 
-            <article><!--artigo-->
-                Artigo 01
-            </article>
-            <article>
-                Artigo 02
-            </article>
-        </section>
-        <aside>
-            Barra lateral
-        </aside>
+        
+       <div class="row"> <!-- Varios outros elementos dentro dela -->
+            <section><!--seções da pagina conteudo principal -->
+             
+                <article class="card"><!--artigo-->
+                    <h2>DESENVOLVIMENTO DE PÀGINA WEB</h2>
+                    <h5>Desenvolva seu site com HTML, CSS e JavaScript</h5>
+                    <img src="img/html-css-javascript.png" 
+                        alt="Capa curso de desenvolvimento de paginas web"><!--width largura height tamanho -->
+                        <p>Sobre o curso</p>
+                        <p>
+                            Nesse curso vamos aprender a desenvolver web utilizando HTML,CSS JavaScript, Durante 
+                            as aulas vamos desenvolver paginas web e tambem a publicar sites na web 
+                        </p>
+                </article>
+                <article class="card">
+                    <h2>DESENVOLVIMENTO DE APLICATIVOS</h2>
+                    <h5>Desenvolvimento de aplicativos android App Invertor</h5>
+                <img src="img/app-inventor.png" 
+                alt="Capa do curso app evento">
+                <p>Sobre o curso</p>
+                <p style="margin-bottom: 20%;">
+                    Nesse curso vamos estudar lógica de programação aplicando conceitos aprendidos desenvolvimento de aplicativos na plataforma 
+                    App Inventor, ao final do curso vamos aprender a publicar nosso  aplicativosna Play Store.
+                </p>
+                </article>
+            </section>
+            <aside> <!--Barra Lateral -->
+                <article class="card">
+                    <h3>Post mais visto</h3>
+                    <img src="img/aula.jpg" 
+                        alt="Capa do post mais visto.">
+                    <img src="" alt="">    
+                    <p>Nessa aula aprederemos como criar a estrutura principal do documento HTML.</p>
+                </article >
+                <article class="card">
+                    <h3>Notícias</h3>
+                    <img src="img/noticia.jpg" alt="Capa da noticia.">
+                    <p>Alunos da escolo Municipal do bairro Alvorada fazem trabalhos sobre proteção ao meio ambiente.</p>
+
+                </article>
+            </aside>
+       </div>
         <footer>
-            Rodapé
+                <dl>
+                    <dt>E-mail</dt>
+                    <dd>email@gmail.com</dd>
+                    <br>
+                    <dt>Telefone</dt>
+                    <dd>{46}99147-0933</dd>
+                </dl>
+                <p>Edi Curso</p>
         </footer>
     </body>
 </html>
